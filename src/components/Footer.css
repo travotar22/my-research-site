@@ -1,0 +1,119 @@
+.site-footer {
+    background-color: #1d243b; /* Matching header background */
+    padding: 20px;
+    text-align: center;
+    color: #d9dde5; /* Light text color similar to header */
+    animation: fadeInFooter 1s ease-in-out;
+}
+  
+.contact-form-container {
+    max-width: 800px;
+    margin-left: 10%;
+    margin-right: 50%;
+    animation: fadeIn 1s ease-in-out;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+  
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #d9dde5; /* Light label color */
+}
+  
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #2e3a59; /* A lighter shade of the background for the border */
+    background-color: #252e48; /* A slightly lighter background color for the fields */
+    color: #d9dde5; /* Text color for inputs */
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effect */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #5c85d6; /* Highlight color for input focus */
+    box-shadow: 0 0 8px rgba(92, 133, 214, 0.5); /* Soft glow effect */
+}
+  
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #bcc5d3; /* Lighter placeholder text for better visibility */
+}
+  
+.form-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5c85d6; /* Primary button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    animation: pulse 1.5s infinite; /* Pulse animation for button */
+}
+  
+.form-group button:hover {
+    background-color: #4a6fad; /* Darken button on hover for effect */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInFooter {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.site-footer {
+    background-color: #1d243b;
+    color: #d9dde5;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust as needed for your design */
+}
+
+.footer-logo {
+    /* Adjust width and height as necessary */
+    width: 300px; 
+    height: auto;
+    margin-right: 10px; /* Gives some space between the logo and the form */
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Add responsive behavior for small screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+}

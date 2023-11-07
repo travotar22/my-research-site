@@ -1,0 +1,65 @@
+
+nav {
+    background-color: #1d243b; /* Dark blue background */
+    color: #d9dde5; /* Light text */
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers the navigation items horizontally */
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: #d9dde5; /* Light text */
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover, nav a.active {
+    color: #707787; /* Lighter blue for hover and active state */
+    border-bottom: 2px solid #707787; /* Underline effect for hover and active state */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Add this part only if you have a logo or brand name in the navigation */
+  .brand-logo {
+    font-size: 1.5rem;
+    color: #d9dde5;
+    text-decoration: none;
+    margin-right: auto; /* Pushes everything else to the right */
+  }
+  
+  /* Optional: Add some hover effects for the links to give feedback on interaction */
+  nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #707787;
+    transition: width .3s;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  

@@ -1,0 +1,81 @@
+/* DocumentationPage.css */
+.documentation-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .documentation-title {
+    color: #484e60;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .documentation-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between categories */
+    justify-content: center;
+  }
+  
+  .documentation-category {
+    flex-basis: calc(50% - 20px); /* Two categories side by side with gap */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .documentation-list {
+    margin-top: 20px;
+  }
+  
+  .document-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .document-card:hover {
+    background-color: #eff3ff;
+  }
+  
+  .document-description h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .document-description p {
+    margin: 5px 0 0;
+    color: #666;
+  }
+  
+  .document-download {
+    padding: 10px 20px;
+    background-color: #1d243b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .document-download:hover {
+    background-color: #003d82;
+  }
+  
+  @media (max-width: 768px) {
+    .documentation-categories {
+      flex-direction: column;
+    }
+    
+    .documentation-category {
+      flex-basis: 100%;
+    }
+  }
+  

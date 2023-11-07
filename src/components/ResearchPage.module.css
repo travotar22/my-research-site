@@ -1,0 +1,92 @@
+/* ResearchPage.css */
+.researchContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%; /* Adjust as necessary */
+}
+
+.imagesColumn {
+  flex: 0 0 50%; /* Do not grow or shrink, start at 50% width */
+  display: flex;
+  width: 50%;
+  flex-direction: column; /* Stack the image and references vertically */
+  align-items: flex-start; /* Aligns children (image and references) to the start of the column */
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.imagesColumn {
+  max-width: 100%; /* Image maximum width is 100% of its parent */
+  max-height: calc(50vh - 40px); /* Adjust this value as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Spacing between image and references */
+}
+
+
+.references {
+  font-size: 0.8em; /* Smaller font size for references */
+  color: #666; /* Light grey color */
+  text-align: left; /* Ensure references are left-aligned */
+  flex: 0 0 50%;
+}
+
+.referencesTitle {
+  margin-bottom: 10px; /* Add some space between the title and the list */
+}
+
+.content {
+  flex: 0 0 50%; /* Do not grow or shrink, start at 50% width */
+  padding: 20px; /* Optional padding for spacing, adjust as necessary */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.highlight {
+  font-weight: bold;
+  color: #0056b3; /* Example color for highlighted text */
+}
+.researchImage {
+  width: 100%; /* Stretch image to cover the container's width */
+  max-height: 50vh; /* Adjust this value as needed, 50vh is 50% of the viewport height */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensures the image is scaled to be as large as possible within the container without cropping */
+  margin-bottom: 20px; /* Spacing between image and references */
+}
+.references {
+  max-width: 100vh; /* Ensures references section does not exceed half the viewport height */
+
+}
+.home-security .adaptive-anomaly {
+  background-color: #f0f4f8; /* A light blue-grey background for a subtle highlight */
+  border-left: 4px solid #3273dc; /* A solid blue border to the left for emphasis */
+  padding: 16px; /* Padding for visual space inside the section */
+  margin: 8px 0; /* Vertical margins to separate from other sections */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+}
+
+.home-security .adaptive-anomaly h2 {
+  color: #3273dc; /* Matching the border color for the heading */
+}
+
+.home-security .adaptive-anomaly p {
+  color: #444; /* A darker text color for contrast against the highlighted background */
+}
+.main-objective {
+  background-color: #f7f7f7; /* Light grey background */
+  padding: 20px; /* Padding inside the section */
+  margin: 20px 0; /* Margin above and below the section */
+  border-left: 5px solid #0056b3; /* A blue accent line on the left */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+}
+
+.main-objective h1 {
+  color: #0056b3; /* Blue color for the main heading */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.main-objective p {
+  color: #333; /* Dark grey color for text for readability */
+}
+

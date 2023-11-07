@@ -1,0 +1,47 @@
+/* src/components/Header.css */
+.site-header {
+    background-color: #1d243b;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header-logo {
+    height: 90px; /* Adjust size as needed */
+    animation: logoEnter 2s ease-out forwards;
+}
+
+.header-title {
+    color: #d9dde5;
+    margin: 0;
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold font weight */
+    letter-spacing: 1px; /* Spacing between characters */
+    animation: slideUpTitle 1s ease-out forwards;
+}
+
+/* Animations */
+@keyframes logoEnter {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpTitle {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
