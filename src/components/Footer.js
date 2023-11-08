@@ -20,7 +20,7 @@ const Footer = () => {
     return (
         <footer className="site-footer">
         <div className="footer-content">
-        <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Logo" className="footer-logo" />
+        <img src={process.env.PUBLIC_URL + '/Logo.png'} alt="Logo" className="footer-logo" />
 
             <div className="contact-form-container">
                 <h2>Contact Us</h2>
