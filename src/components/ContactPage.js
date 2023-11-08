@@ -23,7 +23,7 @@ const teamMembers = [
     image: process.env.PUBLIC_URL + '/sadev.jpg' // replace with actual path
   },
   {
-    name: 'M.M.S Silve',
+    name: 'M.M.S Silva',
     role: 'IT20383770',
     description: 'Computer Systems Engineering - SLIIT',
     image: process.env.PUBLIC_URL +  '/Malith.jpg' // replace with actual path
