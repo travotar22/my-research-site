@@ -7,31 +7,32 @@ const teamMembers = [
         name: 'Mrs. Narmada Gamage',
         role: 'Supervisor',
         description: 'Computer Systems Engineering - SLIIT ',
-        image: '\\Narmada-Gamage-2.jpg' // replace with actual path
+        image: process.env.PUBLIC_URL + '/Narmada-Gamage-2.jpg',
+        // replace with actual path
         },
     {
     name: 'Sunil Gunasinghage R.W',
     role: 'IT20212704 (Leader)',
     description: 'Computer Systems Engineering - SLIIT',
-    image: '\\ravitha.jpg' // replace with actual path
+    image: process.env.PUBLIC_URL + '/ravitha.jpg', // replace with actual path
     },
     {
     name: 'Ekanayake J.S.P.A',
     role: 'IT20108922',
     description: 'Computer Systems Engineering - SLIIT',
-    image: '\sadev.jpg' // replace with actual path
+    image: process.env.PUBLIC_URL + '/sadev.jpg' // replace with actual path
   },
   {
     name: 'M.M.S Silve',
     role: 'IT20383770',
     description: 'Computer Systems Engineering - SLIIT',
-    image: '\Malith.jpg' // replace with actual path
+    image: process.env.PUBLIC_URL +  '/Malith.jpg' // replace with actual path
   },
   {
     name: 'R.K. Kodikara',
     role: 'IT20182182',
     description: 'Computer Systems Engineering - SLIIT',
-    image: '\\ravindu.jpg' // replace with actual path
+    image: process.env.PUBLIC_URL + '/ravindu.jpg' // replace with actual path
   },
 
   

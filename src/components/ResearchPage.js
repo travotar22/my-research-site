@@ -55,7 +55,7 @@ const ResearchPage = () => {
           <p>[13] I. R. Parameshwaran and R. Prakash, "Anomaly Detection of Sounds 
             for Home Security Systems," IEEE Sensors Journal, vol. 18, no. 22, 
             pp. 9233-9242, 2018.</p>
-            <img src="\sys diagram.jpg" alt="Smart Home" className={styles.researchImage} />
+            <img src="\\sys diagram.jpg" alt="Smart Home" className={styles.researchImage} />
             <section class="main-objective">
 </section>
             </div>
